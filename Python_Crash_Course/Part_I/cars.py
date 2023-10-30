@@ -38,3 +38,16 @@ cars = ['bmw', 'audi', 'toyota', 'subaru']
 print(cars)
 print('Length of the list: ', len(cars))
 
+# The following short code snippet shows how the if construction allows you to correctly respond in a certain special
+# situation. Car names are valid brand names, so they should practically always be displayed with a capital letter at
+# the beginning. However, there are some exceptions and, for example, the value 'bmw' should be all displayed in
+# uppercase.
+
+print('-----')
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+
+print('-----')
