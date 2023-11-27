@@ -82,3 +82,15 @@ for language in set(favourite_languages.values()):
 # It's very easy to confuse a collection with a dictionary, because in both cases a curly bracket is used. When you see
 # curly brackets, but without key-value pairs, you are probably dealing with a collection. Unlike lists and dictionaries
 # a collection does not store elements in any particular order.
+
+favourite_languages = {
+    'john': ['python', 'ruby'],
+    'sarah': ['java'],
+    'edward': ['c++', 'c#', 'c'],
+    'paul': ['python', 'haskell'],
+    }
+
+for name, languages in favourite_languages.items():
+    print(f"\nUser {name.title()}'s favourite programming languages are: ")
+    for language in languages:
+        print(f'\t{language.title()}')
