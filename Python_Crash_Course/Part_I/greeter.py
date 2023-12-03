@@ -16,3 +16,25 @@ prompt += "\nWhat's your name? "
 
 name = input(prompt)
 print(f"Hello, {name.title()}!")
+
+# Below I've presented a simple function called greet_user(), whose task is to display a greeting.
+
+print('-----')
+def greet_user():
+    """Displays a simple greeting."""
+    print("Hello!")
+
+greet_user()
+
+# When a slight modification is made, the greet_user() function can not only display the word Hello!, but also the
+# user's name. To do this, in the brackets of the function definition (def greet_user():) you need to enter the name of
+# a variable, such as username. Adding the mentioned variable means that the function will accept any entered username
+# value. After this change, the function expects a value for username every time it is called. Therefore, when calling
+# the greet_user() function, you can pass the user's name to it in parentheses, for example 'jacob'
+
+print('-----')
+def greet_user(username):
+    """Displays a simple greeting using a username"""
+    print(f"Hello, {username.title()}!")
+
+greet_user('jacob')
