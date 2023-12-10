@@ -38,3 +38,27 @@ def greet_user(username):
     print(f"Hello, {username.title()}!")
 
 greet_user('jacob')
+
+# You can use the function together with all Python structures you have learned so far. For example, we will use the
+# get_formatted_name() function presented earlier with a while loop to greet users more formally.
+
+def get_formatted_name(first_name, last_name):
+    """Returns an elegantly formatted full name."""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+
+while True:
+    print("\n Please enter first and last name: ")
+    print("(type 'q' to quit at any time)")
+
+    f_name = input("First name: ")
+    if f_name == 'q':
+        break
+
+    l_name = input("Last name: ")
+    if l_name == 'q':
+        break
+
+    formatted_name = get_formatted_name(f_name, l_name)
+    print(f"Hello, {formatted_name}!")
