@@ -9,3 +9,17 @@ print(f" You've ordered {pizza['crust']} crust pizza with the following toppings
 
 for topping in pizza['toppings']:
     print(f"\t{topping}")
+
+# The asterisk in the name of the *toppings parameter tells Python to create an empty tuple named toppings and place the
+# resulting values in it.
+
+
+def make_pizza(size, *toppings):
+    """Summary information about the prepared pizza"""
+    print(f"\nI prepare a {size} cm pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+
+make_pizza(30, 'pepperoni')
+make_pizza(40, 'mushrooms', 'green paprica', 'double cheese')
