@@ -1,0 +1,3 @@
+Ex. 8.15 Print models
+Put the functions from print_models.py in a separate file named printing_functions.py. At the beginning of the
+print_models.py file, place the import command and modify file to use the imported functions.

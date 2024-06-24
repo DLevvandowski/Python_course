@@ -1,0 +1,9 @@
+Ex. 8.16 Import commands
+Use the program you created with one function and move it to a separate file. Import this function in the main program
+file, and then call the function in all the ways listed below:
+----
+    import module_name
+    from name_module import name_function
+    from name_module import name_function as fn
+    import module_name as mn
+    from name_module import *
